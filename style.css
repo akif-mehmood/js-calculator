@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Nastaliq+Urdu:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    font-family: poppines;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #020024;
+    background: linear-gradient(45deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    cursor: pointer;
+    
+}
+.calculator {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 60px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+}
+input {
+    width: 380px;
+    padding: 20px;
+    text-align: right;
+    background: transparent;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 60px;
+    color: white;
+}
+button {
+    border-radius: 80%;
+    border: none;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    font-size: 24px;
+    box-shadow: -8px -8px 15px #333333;
+    font-weight: 700;
+    background-color: #1c1b1b;
+    color: white;
+}
+input::placeholder {
+    color: white;
+}
+.equalbtn{
+    background-color: orange;
+}
+button.operator {
+    color: orange;
+} */
+
+
+
+body{
+    font-family: poppins;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* Modern Gradient */
+    background: linear-gradient(135deg, #0d0f24, #1a1c3a, #243b55, #141e30);
+    color: #eaeaea;
+}
+
+.calculator {
+    border-radius: 30px;
+    padding: 25px;
+
+    /* Glassmorphism Background */
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+input {
+    width: 412px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 55px;
+    color: #ffffff;
+}
+
+/* Regular Buttons */
+button {
+    border-radius: 20px;
+    border: none;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    /* Button Background */
+    background: rgba(255,255,255,0.08);
+    color: #eaeaea;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: 0.2s;
+}
+
+/* Hover Effect */
+button:hover{
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.05);
+}
+
+/* Operators ( + - × ÷ ) */
+button.operator {
+    background: rgba(0, 212, 255, 0.25);
+    color: #00eaff;
+    font-weight: 700;
+}
+
+/* Equal Button */
+.equalbtn {
+    background: linear-gradient(135deg, #ff8c00, #ffa726);
+    color: black;
+    font-weight: 900;
+}
+
+.equalbtn:hover {
+    background: linear-gradient(135deg, #ffa441, #ffbe6a);
+}
+
+
+/* =============  Tablet (max-width: 992px)  ============= */
+@media (max-width: 992px) {
+    .calculator {
+        padding: 15px;
+        border-radius: 40px;
+    }
+
+    input {
+        width: 300px;
+        font-size: 45px;
+        padding: 15px;
+    }
+
+    button {
+        width: 65px;
+        height: 65px;
+        margin: 8px;
+        font-size: 20px;
+    }
+}
+
+
+/* =============  Mobile Large (max-width: 768px)  ============= */
+@media (max-width: 768px) {
+    .calculator {
+        padding: 12px;
+        border-radius: 35px;
+    }
+
+    input {
+        width: 260px;
+        font-size: 40px;
+        padding: 12px;
+    }
+
+    button {
+        width: 60px;
+        height: 60px;
+        margin: 8px;
+        font-size: 18px;
+    }
+}
+
+
+/* =============  Mobile Medium (max-width: 576px)  ============= */
+@media (max-width: 576px) {
+    body {
+        justify-content: flex-start;
+        padding-top: 40px;
+    }
+
+    .calculator {
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+    input {
+        width: 220px;
+        font-size: 32px;
+        padding: 10px;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        margin: 6px;
+        font-size: 16px;
+    }
+}
+
+
+/* =============  Mobile Small (max-width: 400px)  ============= */
+@media (max-width: 400px) {
+    input {
+        width: 180px;
+        font-size: 28px;
+    }
+
+    button {
+        width: 45px;
+        height: 45px;
+        margin: 5px;
+        font-size: 14px;
+    }
+}
